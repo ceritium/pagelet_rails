@@ -177,7 +177,7 @@
           target_container: container.attr('id'),
           original_pagelet_options: container.data('pagelet-options')
         });
-        $el.data('params', value);
+        $el.attr('data-params', value);
       }
     });
   };
