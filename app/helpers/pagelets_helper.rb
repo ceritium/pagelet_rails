@@ -1,5 +1,9 @@
 module PageletsHelper
 
+  def html_container
+    pagelet_options.container || :div
+  end
+
   def html_container_attributes
     html_opts = pagelet_options.html.deep_dup || {}
     classes = html_opts.fetch(:class, '').split(' ')
